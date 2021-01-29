@@ -30,8 +30,14 @@
   }
   &__button {
     border: none;
-    padding: 1rem;
-    background: lighten($secondary, 1%);
+    padding: .75rem;
+    //background: lighten($secondary, 1%);
+    border-radius: 50%;
+    background: transparent;
+    img {
+      height: 2.25rem;
+      fill: darken($white, 50%);
+    }
     &:focus {
       outline: none;
     }
