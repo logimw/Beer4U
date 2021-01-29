@@ -1,0 +1,42 @@
+.search {
+  flex: 0 0 40%;
+  form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__input {
+    border-radius: 15px;
+    border: none;
+    background: lighten($secondary, 15%);
+    font-size: 2rem;
+    padding: .5rem 1.75rem;
+    outline: 3px solid transparent;
+    transition: all 300ms ease-in-out;
+    width: 60%;
+    margin-right: -3.5rem;
+
+    &:focus {
+      outline: 3px solid transparent;
+      box-shadow: 1px 0 5px $whitest;
+      width: 100%;
+      background: lighten($secondary, 5%);
+    }
+    &::placeholder {
+      color: darken($white, 50%);
+    }
+
+  }
+  &__button {
+    border: none;
+    padding: 1rem;
+    background: lighten($secondary, 1%);
+    &:focus {
+      outline: none;
+    }
+    &:active{
+      transform: translateY(2px);
+    }
+  }
+}
