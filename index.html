@@ -10,14 +10,18 @@
 
 <header class="header">
         <div class="header__container">
-            <img class="header__logo" src="src/IMG/favicon.png" alt="Logo">
+            <a href="/">
+                <img class="header__logo" src="src/IMG/favicon.png" alt="Logo">
+            </a>
             <div class="search">
                 <form action="">
                     <label for="search">
                     </label>
-                        <input class="search__input" id="search" type="text" placeholder="Search">
+                        <input class="search__input" id="search" type="text" placeholder="Search beer">
                     <button class="search__button">
-                        <img src="src/IMG/SVG/magnifying-glass.svg" alt="">
+                        <svg class="search__icon">
+                            <use href="src/IMG/SVG/magnifying-glass.svg"></use>
+                        </svg>
                     </button>
                 </form>
             </div>
